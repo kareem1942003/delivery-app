@@ -1,0 +1,260 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.header__shrink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 5px 5px 15px -5px #fde4e4;
+}
+
+.nav__menu {
+  color: #212245;
+  font-weight: 300;
+  transition: 0.3s;
+}
+.nav__menu:hover {
+  color: #df2020;
+}
+
+.active_menu {
+  color: #df2020;
+}
+.order__btn {
+  background-color: #df2020;
+}
+.order__btn:hover {
+  background-color: #212245;
+}
+.categore__item:hover {
+  transform: translateY(-15px);
+}
+.hero__main__content {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.food__category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #df2020;
+  margin: 20px 0;
+}
+.food__category img {
+  width: 20px;
+}
+.food__category button {
+  display: flex;
+  gap: 5px;
+  color: white;
+  background: transparent;
+  border: none;
+  padding: 10px 30px;
+}
+.foodBtnActive {
+  background: #fff !important;
+  border-radius: 5px;
+  color: #df2020 !important;
+}
+.product__item:hover {
+  scale: 0.9;
+  box-shadow: 0px 0px 30px #f5c4c4;
+  border: none;
+}
+.hero__image img {
+  width: 500px;
+}
+.location__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location__img img {
+  width: 500px;
+}
+.netWork__img img {
+  width: 500px;
+}
+.imag__customer img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.cart__item__info img {
+  width: 60px;
+  height: 60px;
+}
+.image__in__table {
+  width: 40px;
+}
+.image__main__in__details {
+  width: 300px;
+}
+.imag__customer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cart__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000aa;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+.cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 380px;
+  height: 100%;
+  z-index: 9999999;
+  background: #fff;
+}
+.cart__item-list {
+  height: calc(100vh - 130px);
+  overflow-y: scroll;
+}
+.common__section {
+  background: linear-gradient(#212245b2, #212245b2),
+    url(./assets/images/product_2.2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0px;
+}
+
+.search__widget input:focus {
+  outline: none;
+}
+.sorting__widget select:focus {
+  outline: none;
+}
+.img__item {
+  cursor: pointer;
+}
+
+.tab__active {
+  color: #df2020;
+}
+.tab__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background: #fde4e4;
+  width: 70%;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.form textarea {
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid #df2020;
+  width: 100%;
+  background: transparent;
+}
+.form div,
+.form__checkout div {
+  width: 100%;
+}
+.form input {
+  border: none;
+  border-bottom: 1px solid #df2020;
+  background: transparent;
+  width: 100%;
+}
+.form input:focus,
+.form__checkout input:focus {
+  outline: none;
+}
+.form__checkout {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 20px 0;
+}
+.form__checkout input {
+  border: none;
+  border-bottom: 1px solid #df2020;
+  background: transparent;
+  width: 100%;
+}
+.checkout__card h6,
+h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sorting__widget {
+  width: fit-content;
+}
+.search__widget {
+  width: fit-content;
+}
+.addToCart__btn {
+  border: none;
+  padding: 5px 10px;
+  background: #df2020;
+  color: #fff;
+  border-radius: 5px;
+}
+@media (max-width: 600px) {
+  .hero__image img {
+    width: 300px;
+  }
+  .location__img img {
+    width: 300px;
+  }
+  .netWork__img img {
+    width: 300px;
+  }
+  .hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .sorting__widget {
+    width: 100%;
+  }
+  .sorting__widget select {
+    width: 100%;
+  }
+
+  .search__widget {
+    width: 100%;
+  }
+  .product__images {
+    display: flex;
+  }
+}
